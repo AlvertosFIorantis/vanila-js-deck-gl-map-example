@@ -23,6 +23,20 @@ const polygonData = [
     ],
     name: "firstPolygon",
   },
+  {
+    contours: [
+      [-124.38687094010577, 37.221796783267976],
+      [-123.7013660864577, 37.05099196230184],
+      [-123.34545107655964, 37.73614841419381],
+      [-123.85028766686199, 38.26901242072349],
+      [-124.2427816456069, 38.54902793237366],
+      [-124.87697484310182, 38.60508336514303],
+      [-125.37273289974245, 38.24574722268823],
+      [-125.14339330013307, 37.84125843131095],
+      [-125.33092801855692, 37.44499703004891],
+    ],
+    name: "Second Polygon in San Fransisco",
+  },
 ];
 
 const LAYER_POLY = new deck.PolygonLayer({
@@ -34,7 +48,7 @@ const LAYER_POLY = new deck.PolygonLayer({
   lineWidthMinPixels: 1,
   getPolygon: (d) => d.contours,
   getLineColor: [80, 80, 80],
-  getFillColor: [80, 80, 80],
+  getFillColor: [110, 210, 170],
   getLineWidth: 250,
 });
 
